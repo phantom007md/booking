@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import AdoultCount from './adoultcount';
-import ChildCount from './childcount';
-import InfantCount from './infantcount';
+import AdoultCount from './_adoultcount';
+import ChildCount from './_childcount';
+import InfantCount from './_infantcount';
 import ChildAge from './childage';
 import InfantAge from './infantage';
 import '../assets/_App.css';
