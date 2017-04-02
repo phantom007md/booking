@@ -5,7 +5,7 @@ class Submit extends Component {
   render() {
     return (
       <div className="submit-wrap">
-        <button type="submit" className="btn">SUBMIT</button>
+        <button onClick={this.props.handler} type="submit" className="btn">SUBMIT</button>
       </div>
     );
   }

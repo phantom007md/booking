@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import '../assets/_App.css';
 
 class ChildAge extends Component {
+
+  childAgeGetter = (e)=>{
+    let val = e.target.value;
+    this.props.handler({value:val, id:this.props.childNum});
+  }
+
   render() {
     return (
       <span>
@@ -9,7 +15,7 @@ class ChildAge extends Component {
           <span>child </span>
           <span>childNum</span>
           <span>age</span>
-          <select className="child-age">
+          <select onChange={this.childAgeGetter} className="child-age">
             <option>2 YEAR</option>
             <option>3 YEAR</option>
             <option>4 YEAR</option>

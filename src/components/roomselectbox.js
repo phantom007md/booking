@@ -5,7 +5,7 @@ class RoomSelectBox extends Component {
   render() {
     return (
       <div className="room-select-wrap">
-        <select className="room-select">
+        <select onChange={this.props.handler} className="room-select" >
           <option>1</option>
           <option>2</option>
           <option>3</option>

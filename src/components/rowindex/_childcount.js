@@ -6,7 +6,7 @@ class ChildCount extends Component {
     return (
       <span>
         <span>child count:</span>
-        <select className="child-count">
+        <select onChange={this.props.handler} className="child-count">
           <option>0</option>
           <option>1</option>
           <option>2</option>
